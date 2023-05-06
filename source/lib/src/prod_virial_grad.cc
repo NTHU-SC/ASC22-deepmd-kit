@@ -35,7 +35,6 @@ void deepmd::prod_virial_grad_a_cpu(FPTYPE* grad_net,
   }
 
 // compute grad of one frame
-#pragma omp parallel for
   for (int ii = 0; ii < nloc; ++ii) {
     int i_idx = ii;
 
